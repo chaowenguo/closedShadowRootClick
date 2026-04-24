@@ -1,6 +1,6 @@
 # -*- coding:utf-8 -*-
 from setuptools import setup, find_packages
-from DrissionPage import __version__
+from closedShadowRootClick import __version__
 
 with open("README.md", "r", encoding='utf-8') as fh:
     long_description = fh.read()
@@ -8,14 +8,13 @@ with open("README.md", "r", encoding='utf-8') as fh:
 setup(
     name="DrissionPage",
     version=__version__,
-    author="g1879",
-    author_email="g1879@qq.com",
+    author="chaowenguo",
+    author_email="chaowen.guo1@gmail.com",
     description="Python based web automation tool. It can control the browser and send and receive data packets.",
     long_description=long_description,
     long_description_content_type="text/markdown",
     # license="BSD",
-    keywords="DrissionPage",
-    url="https://DrissionPage.cn",
+    keywords="closedShadowRootClick",
     include_package_data=True,
     packages=find_packages(),
     zip_safe=False,
@@ -38,7 +37,7 @@ setup(
     python_requires='>=3.6',
     entry_points={
         'console_scripts': [
-            'dp = DrissionPage._functions.cli:main',
+            'dp = closedShadowRootClick._functions.cli:main',
         ],
     },
 )
